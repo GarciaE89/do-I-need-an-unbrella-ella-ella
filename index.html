@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>5-Day Forecast</title>
+</head>
+<header class="row" id="header">
+    <div class="col-md d-flex justify-content-center">
+        <h2 class="font-weight-bold">Weather Dashboard</h2>
+    </div>
+</header>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-2">
+                <div id="formCol" class="form-group form mt-3 ml-3">
+                    <label class="h5">Search city by name: </label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="" id="searchResponse" aria-describedby="helpId"
+                            placeholder="">
+                        <div class="input-group-append">
+                            <div id="Search"></div>
+                            <span id="current-search"></span>
+                        </div>
+                    </div>
+                    <ul id="cities"></ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-10 pl-5">
+                <div class="weather"> </div>
+                <h1 id="city"></h1>
+                <div id="weatherForecast"></div>
+                <div id="ultaVioletIndex"></div>
+                <div id="forecastHeader" class="pt-3 h2"></div>
+                <div id="forecast" class="row forecast p-3"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+   
+</body>
+
+</html>
+
